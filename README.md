@@ -101,13 +101,14 @@ Change into the project directory that was created when you cloned the repositor
 3. **Running the Project**:
 Once you have the project setup on your local machine, you can run it using SBT:
 
-Launch the SBT shell. This will load the project's build configuration and dependencies.
+   Launch the SBT shell. This will load the project's build configuration and dependencies.
 
    ```bash
    sbt "run <your-file-path/testInputV2.txt>"
-```
 
 - This command starts the SBT shell, which provides a command prompt with tab completion and history.
 
-4. Select `[1]` to run the program
+4. **Select the Main Class**: If multiple main classes are detected, sbt will prompt you to select one. Type the number corresponding to `[1] Main` to run the main program:
+   
+
 
