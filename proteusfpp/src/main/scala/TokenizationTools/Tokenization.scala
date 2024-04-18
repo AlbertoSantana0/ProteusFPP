@@ -118,7 +118,9 @@ object Tokenizer {
     "event" -> UnknownTokens.EventToken,
     "int" -> UnknownTokens.IntToken,
     "on" -> UnknownTokens.OnToken,
-    "string" -> UnknownTokens.StringToken
+    "string" -> UnknownTokens.StringToken,
+    "monitor" -> ProteusTokens.MonitorToken
+
   )
 
   def tokenize(source: List[Char]): List[Token] = {

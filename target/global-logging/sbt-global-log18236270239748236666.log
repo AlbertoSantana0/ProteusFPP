@@ -1,0 +1,15 @@
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(sbtMapExec 15 __fd798ccb-ed92-4d00-a204-51dc41d1fcd9, None, None)
+[debug] > Exec(bspBuildTargetScalacOptions file:/Users/albertosantana/scala/ProteusFPP/#proteusfpp/Compile file:/Users/albertosantana/scala/ProteusFPP/#proteusfpp/Test file:/Users/albertosantana/scala/ProteusFPP/#proteusfpp-build, Some(__fd798ccb-ed92-4d00-a204-51dc41d1fcd9), Some(CommandSource(network-1)))
+[debug] jsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":4,"message":"Processing buildTarget/scalacOptions"})
+[debug] Evaluating tasks: bspBuildTargetScalacOptions
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[success] Total time: 0 s, completed Apr 17, 2024, 10:01:41 PM
+[debug] > Exec(sbtCompleteExec 15, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(sbtReportResult 15, Some(15), Some(CommandSource(network-1)))
+[debug] unmatched Processing event for requestId Some(15): None
+[debug] unmatched json response for requestId Some(15): {"status":"Done","channelName":"network-1","execId":"15","commandQueue":["shell"],"exitCode":0}
+[debug] > Exec(shell, None, None)
+[debug] Unhandled notification received: $/cancelRequest: JsonRpcNotificationMessage(2.0, $/cancelRequest, {"id":"1"})

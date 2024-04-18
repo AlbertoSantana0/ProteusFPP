@@ -134,6 +134,7 @@ object ProteusTokens{
   case object StateMachineToken extends Proteus
   case object StateNameToken extends Proteus
   case object WhileToken extends Proteus
+  case object MonitorToken extends Proteus
 
   // Proteus Operators
   case object DoubleSlashToken extends Proteus // //
