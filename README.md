@@ -1,3 +1,6 @@
+![Project Logo](FPPProteusLogo.webp)
+
+
 # [FPP](https://github.com/nasa/fpp) + [Proteus](https://github.com/csun-tavlab/proteus) Compiler
 
 ## Project Overview
