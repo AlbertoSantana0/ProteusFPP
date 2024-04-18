@@ -1,0 +1,14 @@
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(sbtMapExec 7 __80f17907-55ba-4faf-bc8a-b1e23111ef7d, None, None)
+[debug] > Exec(bspBuildTargetOutputPaths file:/Users/albertosantana/scala/ProteusFPP/#proteusfpp/Compile file:/Users/albertosantana/scala/ProteusFPP/#proteusfpp/Test file:/Users/albertosantana/scala/ProteusFPP/#proteusfpp-build, Some(__80f17907-55ba-4faf-bc8a-b1e23111ef7d), Some(CommandSource(network-1)))
+[debug] jsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":4,"message":"Processing buildTarget/outputPaths"})
+[debug] Evaluating tasks: bspBuildTargetOutputPaths
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[success] Total time: 0 s, completed Apr 17, 2024, 8:56:21 PM
+[debug] > Exec(sbtCompleteExec 7, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(sbtReportResult 7, Some(7), Some(CommandSource(network-1)))
+[debug] unmatched Processing event for requestId Some(7): None
+[debug] unmatched json response for requestId Some(7): {"status":"Done","channelName":"network-1","execId":"7","commandQueue":["shell"],"exitCode":0}
+[debug] > Exec(shell, None, None)
