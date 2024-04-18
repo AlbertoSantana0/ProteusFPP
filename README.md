@@ -1,5 +1,5 @@
-![Project Logo](FPPProteusLogo.webp)
-
+<p align="center">
+  <img width="560" height="560" src="FPPProteusLogo.png">
 
 # [FPP](https://github.com/nasa/fpp) + [Proteus](https://github.com/csun-tavlab/proteus) Compiler
 
