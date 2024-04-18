@@ -30,15 +30,15 @@ object Main{
       print(fpp)
   
 
-    val folderName = generateUniqueFolderName()
-    val folder = Paths.get(folderName)
-    Files.createDirectories(folder)
-    val proteusFileName = "proteusfile.proteus"
-    val fppFileName = "fppfile.fpp"
-    generateFiles(proteus, s"$folderName/$proteusFileName")
-    generateFiles(fpp, s"$folderName/$fppFileName")
+      val folderName = generateUniqueFolderName(inputFile)
+      val folder = Paths.get(folderName)
+      Files.createDirectories(folder)
+      val proteusFileName = "proteusfile.proteus"
+      val fppFileName = "fppfile.fpp"
+      generateFiles(proteus, s"$folderName/$proteusFileName")
+      generateFiles(fpp, s"$folderName/$fppFileName")
 
-    println(s"Files generated and placed in folder $folderName successfully.")
+      println(s"Files generated and placed in folder $folderName successfully.")
         } catch {
       case e: Exception => println(s"Error reading file: ${e.getMessage}")
     }
