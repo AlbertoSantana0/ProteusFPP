@@ -17,6 +17,8 @@ import scala.util.{Failure, Success}
 object Main{
   def main(args: Array[String]): Unit = {
     val inputFile = args.headOption.getOrElse("defaultfile.txt")
+    val absoluteFile = new File(inputFile).getAbsolutePath
+    val lastPathSegment = absoluteFile.split(File.separator).lastOption.getOrElse(absoluteFile)
     try {
 
       val fileContent = Source.fromFile(new File(inputFile)).toList
@@ -32,7 +34,7 @@ object Main{
 
 
 
-      val folderName = generateUniqueFolderName(inputFile)
+      val folderName = generateUniqueFolderName(lastPathSegment)
       val folder = Paths.get(folderName)
       Files.createDirectories(folder)
       val proteusFileName = "proteusfile.proteus"
