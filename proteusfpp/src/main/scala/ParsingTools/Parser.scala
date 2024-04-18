@@ -51,6 +51,7 @@ object Parser {
     if(tokenList.isEmpty){
       (proteusTokens, fppTokens)
     } else {
+      println(tokenList.head)
       tokenList match {
 
         case ConstantToken :: IdentifierToken(name) :: EqualsToken :: OpenBracketToken :: rest => {
@@ -80,6 +81,11 @@ object Parser {
         case PostAnnotationToken :: IdentifierToken(name) :: rest => {
           val (fppValues, remainingTokens) = GetFppValues(rest) // New function to get FPP values
           val newFPPTokens = fppTokens ++ List(PostAnnotationToken, IdentifierToken(name)) ++ fppValues
+          parse(remainingTokens, proteusTokens, newFPPTokens)
+        }
+        case AnnotationToken :: IdentifierToken(name) :: rest => {
+          val (fppValues, remainingTokens) = GetFppValues(rest) // New function to get FPP values
+          val newFPPTokens = fppTokens ++ List(AnnotationToken, IdentifierToken(name)) ++ fppValues
           parse(remainingTokens, proteusTokens, newFPPTokens)
         }
         case AsyncToken :: CommandToken :: rest => {
@@ -279,6 +285,8 @@ object Parser {
           val newProteusTokens = proteusTokens ++ List(EventToken, IdentifierToken(name), OpenBraceToken) ++ restOfProteus
           parse(restOfCode.tail, newProteusTokens :+ restOfCode.head, fppTokens)
         }
+        case NewLineToken :: rest => parse(rest, proteusTokens :+ NewLineToken, fppTokens :+ NewLineToken)
+
 
 
         case _ :: rest => parse(rest, proteusTokens, fppTokens)
