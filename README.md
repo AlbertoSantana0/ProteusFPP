@@ -113,5 +113,6 @@ Once you have the project setup on your local machine, you can run it using SBT:
 
 4. **Select the Main Class**: If multiple main classes are detected, sbt will prompt you to select one. Type the number corresponding to `[1] Main` to run the main program:
    
-
+## Collaborators
+Chance Chime, Elliot Fayman, Jonathan Garcia, David Pedroza, Brian Rojas, Alberto Santana, Dalton Wiggins 
 
